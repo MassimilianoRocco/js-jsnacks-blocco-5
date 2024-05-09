@@ -60,9 +60,70 @@ alpine.pilota = "Pierre Gasly"
 alpine.peso = 805
 carList.push(alpine);
 
-let pesoTotale = 0;
 
-for(const car of carList){
-    pesoTotale += car.peso;
+
+
+
+
+// let risultato = addition(carList);
+// console.log(risultato);
+
+// let moreThan800 = moreThan800TotalWeight(carList);
+// console.log(moreThan800);
+
+
+
+
+
+
+// // Snack I
+// function addition(list){
+// let pesoTotale = 0;
+
+// for(const car of list){
+//     pesoTotale += car.peso;
+// }
+// return pesoTotale;
+// }
+
+
+// // SNACK II
+// function moreThan800TotalWeight(list){
+// const pesoMaggiore = [];
+// const pesoMinore = [];
+// let pesoTotale = 0;
+// let pesoTotale2 = 0;
+
+// for(const car of list){
+//     if(car.peso>800){
+//         pesoMaggiore.push(car.peso);
+//     }
+//     else{
+//        pesoMinore.push(car.peso);
+//     }
+// }
+
+// for(const pesoSingolo of pesoMaggiore){
+//     pesoTotale += pesoSingolo;
+// }
+// for(const pesoSingolo2 of pesoMinore){
+//     pesoTotale2 += pesoSingolo2;
+// }
+// console.log("Dentro funzione " + pesoTotale);
+// console.log("Dentro funzione " + pesoTotale2);
+// return pesoTotale ;
+// }
+
+
+// SNACK III
+let pickedWord = "parola";
+let reverseWord = reverseString(pickedWord);
+console.log(reverseWord);
+
+function reverseString(string){
+    let stringaInversa = "";
+    for(let i=string.length-1; i>=0; i--){
+        stringaInversa += string[i];
+    }
+    return stringaInversa;
 }
-console.log(pesoTotale);
