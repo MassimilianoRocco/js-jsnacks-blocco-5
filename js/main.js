@@ -127,3 +127,20 @@ function reverseString(string){
     }
     return stringaInversa;
 }
+
+// SNACK IV
+const first = ["a", "b", "c", "d"];
+const second = [1,2,3,4];
+let result = arrayFusion(first, second);
+console.log(result);
+
+function arrayFusion(array1, array2){
+    const definitiveArray = [];
+
+    for(let x = 0; x<array1.length; x++){
+        definitiveArray.push(array1[x]);
+        definitiveArray.push(array2[x]);
+    }
+
+        return definitiveArray;
+}
